@@ -1,0 +1,21 @@
+Package: YeastBarcodes
+Title: Check Yeast Deletion Barcodes
+Version: 0.0.1
+Authors@R: person("Eric", "Bryant", email = "eeb2139@columbia.edu", role = c("aut", "cre"))
+Description: This package contains tools to check barcodes of strains from the
+    yeast gene deletion collection.
+Depends:
+    R (>= 3.3.1)
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+biocViews: Software, Genetics
+Depends:
+    dplyr
+Imports:
+    readr,
+    Biostrings,
+    data.table
+Remotes: github::EricEdwardBryant/easydb
+RoxygenNote: 5.0.1

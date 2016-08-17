@@ -1,0 +1,9 @@
+name: '_barcodes.sqlite'
+
+update:
+  barcodes: 'YeastBarcodes::download_barcodes("barcodes")'
+
+table:
+  barcodes:
+  - path: barcodes
+    pattern: barcodes.csv

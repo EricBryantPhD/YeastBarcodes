@@ -1,0 +1,4 @@
+Name: Check Strain Barcodes
+Description: Launches application to check strain barcodes
+Binding: check_barcodes_app
+Interactive: true
