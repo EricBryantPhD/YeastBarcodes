@@ -3,6 +3,7 @@
 S3method(collect,tbl_barcodes)
 S3method(src_desc,src_barcodes)
 S3method(tbl,src_barcodes)
+export(check_barcodes)
 export(check_barcodes_app)
 export(download_barcodes)
 export(src_barcodes)

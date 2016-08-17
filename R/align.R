@@ -6,6 +6,7 @@
 #'
 #' @importFrom tidyr gather_
 #' @importFrom Biostrings pairwiseAlignment
+#' @export
 
 check_barcodes <- function(sequences, set = c('a', 'alpha', 'het', 'hom')) {
 
