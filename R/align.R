@@ -55,6 +55,7 @@ check_barcodes_app <- function() {
       check_barcodes(sequences = input$sequence, set = input$set) %>%
         select_(Strain = ~strain_id, Match = ~tag, Score = ~score)
     })
+    session$onSessionEnded(function() stopApp())
   }
 
   # ---- User Interface ----
