@@ -40,7 +40,7 @@ download_barcodes <- function(to = '.', set = c('a', 'alpha', 'het', 'hom')) {
         name = 'alpha',
         file = file.path(to, 'MATalpha-barcodes.csv', fsep = '/'),
         from = 'http://www-sequence.stanford.edu/group/yeast_deletion_project/strain_alpha_mating_type.txt',
-        cols = 'cc____________________cc___'
+        cols = 'cc___________________cc____'
       ),
       # Heterozygous diploid barcodes
       het = download(
