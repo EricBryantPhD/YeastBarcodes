@@ -5,7 +5,14 @@ This is an R package that includes an application for checking sequenced barcode
 ## Install
 
 ```{r}
-devtools::install_github('EricEdwardBryant/YeastBarcodes')
+if (!require(devtools))      install.packages('devtools')
+if (!require(BiocInstaller)) source('https://bioconductor.org/biocLite.R')
+
+# Install two packages available on GitHub
+BiocInstaller::biocLite(
+  'EricEdwardBryant/easydb',
+  'EricEdwardBryant/YeastBarcodes'
+)
 ```
 
 ## Usage
