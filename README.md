@@ -4,7 +4,7 @@ This is an R package that includes an application for checking sequenced barcode
 
 ## Install
 
-```{r}
+```r
 if (!require(devtools))      install.packages('devtools')
 if (!require(BiocInstaller)) source('https://bioconductor.org/biocLite.R')
 
@@ -19,7 +19,7 @@ BiocInstaller::biocLite(
 
 The `check_barcodes` function takes a vector of sequences and returns the closest matching barcode.
 
-```{r}
+```r
 library(YeastBarcodes)
 
 # Inputs
