@@ -17,5 +17,6 @@ Imports:
     readr,
     Biostrings,
     data.table
-Remotes: github::EricEdwardBryant/easydb
+Remotes:
+    EricEdwardBryant/easydb
 RoxygenNote: 5.0.1
