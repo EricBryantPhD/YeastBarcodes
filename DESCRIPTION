@@ -4,14 +4,13 @@ Version: 0.0.1
 Authors@R: person("Eric", "Bryant", email = "eeb2139@columbia.edu", role = c("aut", "cre"))
 Description: This package contains tools to check barcodes of strains from the
     yeast gene deletion collection.
-Depends:
-    R (>= 3.3.1)
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
 VignetteBuilder: knitr
 biocViews: Software, Genetics
 Depends:
+    R (>= 3.3.1),
     dplyr
 Imports:
     readr,
