@@ -14,4 +14,3 @@ check_barcodes(sequences, set = c("a", "alpha", "het", "hom"))
 \description{
 Given a vector of sequences, check barcodes by aligning
 }
-

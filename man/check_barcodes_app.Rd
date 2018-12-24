@@ -9,4 +9,3 @@ check_barcodes_app()
 \description{
 Lookup a single sequenced barcode
 }
-

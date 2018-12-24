@@ -30,16 +30,18 @@ src_barcodes <- function() {
 
 #---- src_rothscreen methods --------------------------------------------------
 #' @export
-src_desc.src_barcodes <- function(x) {
-  paste0(
-    'sqlite ', x$info$serverVersion,
-    ' [YeastBarcodes - ', packageVersion('YeastBarcodes'), ']'
-  )
+print.src_barcodes <- function(x) {
+  cat(paste0(
+    'sqlite ', RSQLite::rsqliteVersion()[[2]],
+    ' [YeastBarcodes - ', packageVersion('YeastBarcodes'), ']\n',
+    dplyr:::wrap('tbls: ', paste0(RSQLite::dbListTables(x$con), collapse = ', '))
+  ))
 }
 
+#' @importFrom dbplyr tbl_sql
 #' @export
 tbl.src_barcodes <- function(src, from, ...) {
-  tbl_sql('sqlite', src = src, from = from, ...) %>% add_class('tbl_barcodes')
+  dbplyr::tbl_sql('sqlite', src = src, from = from, ...) %>% add_class('tbl_barcodes')
 }
 
 #' @export

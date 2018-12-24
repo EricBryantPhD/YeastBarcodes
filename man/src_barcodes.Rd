@@ -16,4 +16,3 @@ db <- src_barcodes()
 db
 
 }
-

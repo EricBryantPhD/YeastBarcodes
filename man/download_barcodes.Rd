@@ -25,4 +25,3 @@ Returns a dataframe with five columns.
 \description{
 Download barcodes from the \href{http://www-sequence.stanford.edu/group/yeast_deletion_project/deletions3.html}{yeast gene deletion consortium}
 }
-
