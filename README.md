@@ -10,8 +10,8 @@ if (!require(BiocInstaller)) source('https://bioconductor.org/biocLite.R')
 
 # Install two packages available on GitHub
 BiocInstaller::biocLite(
-  'EricEdwardBryant/easydb',
-  'EricEdwardBryant/YeastBarcodes'
+  'EricBryantPhD/easydb',
+  'EricBryantPhD/YeastBarcodes'
 )
 ```
 
